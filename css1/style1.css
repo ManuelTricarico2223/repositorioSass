@@ -1,0 +1,339 @@
+/**
+54BAB9
+*/
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Noto+Serif:wght@700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    justify-content: center;
+    font-family: 'Anek Latin', sans-serif;
+    margin: 10px;
+
+
+   }
+   
+   .container{
+    margin: 10px;
+   }
+nav ul, .descuento, article{
+    border: 2px double rgb(10, 10, 10) ;
+    background-color: rgb(248, 249, 250);
+    list-style: none;
+    margin:5px;
+}
+.galeria{
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+    font-size: 30px;
+    padding: 10px;
+
+    }
+    li a:hover{
+        background-color: rgb(7, 156, 243);
+        transition: 3s;
+
+    }
+    img{
+        margin: 10px;
+    }
+
+ul li{
+    display: inline-block;
+    margin: 15px;}
+
+
+header{
+    grid-area: header ;
+}
+nav{
+    grid-area: nav;
+}
+.propaganda{
+    grid-area: propaganda;
+}
+.descuento{
+    grid-area: descuento;
+}
+.galeria{
+    grid-area: galeria;
+}
+footer{
+    grid-area: footer;
+}
+.videoPrincipal{
+    grid-area: video;
+}
+a{
+    grid-area: a;
+}
+.container{
+     grid-area: container;
+}
+
+
+/*celular*/
+
+@media (min-width:480px){
+    .container{
+    display: grid;
+    grid-template-areas:
+     "header"
+     "tituloPrincipal"
+     "navbar-toggler"
+     "nav"
+     "a"
+     "propaganda"
+     "descuento"
+     "galeria" 
+     "video"
+     "footer";
+    grid-template-columns: 1fr;
+    }  
+ 
+  .header{
+
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 30px 30px 20px; 
+    margin-left: 80px;
+    font-weight: bolder;
+}
+
+     nav{
+ 
+    margin-left: 80px;
+
+    }
+   .navbar-toggler{
+    background-color: aliceblue;
+   }
+    a{
+       font-family: 'Times New Roman', Times, serif;
+       display: flex;
+       font-size: 30px;
+       color: black;
+    }
+    .header{
+        font-size: 50px;
+    }
+
+    .propaganda{
+        font-size: 30px; 
+        display: grid;
+        border: 10px double black;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(249, 0, 0, 0.948);
+        text-align: center;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    .descuento{
+        color: aqua;
+        text-align: center;
+        font-size: 30px;
+        background-color: rgb(7, 7, 7);
+        padding: 10px;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    video{
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+ }
+
+
+ footer{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-style: oblique;
+    background-color: yellow;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px
+    ;
+
+ }
+}
+/*tablet*/
+@media(min-width:720px){
+    .container{
+
+    column-width: 100%;
+     display: grid;
+     grid-template-areas:
+      "header"
+      "nav"
+      "a"
+      "propaganda"
+      "descuento"
+      "galeria" 
+      "video"
+      "footer";
+     grid-template-columns: 1fr;
+     }  
+ 
+ 
+   header{
+    font-size: 80px;
+    background-color: rgb(8, 139, 246);
+    text-align: center;
+    color: rgb(243, 236, 236);
+    display: grid;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+   }
+   .descuento{
+    color: rgb(15, 15, 15);
+    font-size: 40px;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: rgb(4, 194, 241);
+    border: outset rgb(249, 246, 246);
+    border-width: 5px 10px;
+    border-color: rgb(248, 245, 245);
+    justify-content: center;
+}
+
+ nav{
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+    margin: 20px;
+    }
+  a{
+    font-size:50px;
+    color: coral;
+  }
+
+
+.propaganda{
+        font-size: 40px; 
+        display: grid;
+        border: 10px double rgb(1, 1, 1);
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left:100px;
+        margin-right: 100px;
+     }
+     .galeria{
+        background-color: aliceblue;
+        margin: 10px 200px 10px 200px;
+        box-shadow: 3px 5px 5px black;
+        padding: 10px;
+        gap: 10px;
+    }
+
+
+ video{
+   justify-content: center;
+   margin: 10px;
+ }
+
+
+ footer{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-style: oblique;
+    background-color: yellow;
+    padding: 20px;
+
+ }
+}
+@media(min-width:1024){
+    .container{
+        display: grid;
+        grid-template-areas:
+         "header"
+         "nav"
+         "a"
+         "propaganda"
+         "descuento"
+         "galeria" 
+         "video"
+         "footer";
+        grid-template-columns: 1fr;
+        }  
+    
+    
+      header{
+       font-size: 80px;
+       background-color: rgb(8, 139, 246);
+       text-align: center;
+       color: rgb(243, 236, 236);
+       display: grid;
+       margin-bottom: 10px;
+       padding-bottom: 20px;
+      }
+      .descuento{
+       color: rgb(15, 15, 15);
+       font-size: 40px;
+       margin: 10px;
+       font-weight: bolder;
+       background-color: rgb(4, 194, 241);
+       border: outset rgb(249, 246, 246);
+       border-width: 5px 10px;
+       border-color: rgb(248, 245, 245);
+       justify-content: center;
+   }
+   
+    nav{
+       display: flex;
+
+       margin: 20px;
+       }
+     a{
+       font-size:50px;
+       color: coral;
+     }
+   
+   
+   .propaganda{
+           font-size: 40px; 
+           display: grid;
+           border: 10px double rgb(1, 1, 1);
+           padding: 10px;
+           font-family: Arial, Helvetica, sans-serif;
+           margin-left:100px;
+           margin-right: 100px;
+        }
+        .galeria{
+           background-color: aliceblue;
+        
+           box-shadow: 3px 5px 5px black;
+           padding: 10px;
+           gap: 10px;
+       }
+   
+   
+    video{
+      justify-content: center;
+      margin: 10px;
+      padding: 30px;
+      
+    }
+   
+   
+    footer{
+       font-size: 40px;
+       margin-bottom: 50px;
+       font-style: oblique;
+       background-color: yellow;
+       padding: 20px;
+   
+    }
+   }
+
+
+   

@@ -1,0 +1,183 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Fondo de la pagina*/
+
+
+body{
+    margin: 10px;
+    background-color: darkcyan;
+
+ 
+    
+}
+
+.navbar-toggler{
+    color: aliceblue;
+}
+
+ .tituloPrincipal{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    background-color: black;
+ }
+
+ .navbar{
+    padding-top: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    color: black;
+    list-style: none;
+    padding-left: 30px;
+}
+nav li{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+
+}
+nav li a{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(250, 245, 245);
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    margin-right: 20px;
+    padding-left: 40px;
+ 
+}
+
+.imagenAuto{
+position: absolute;
+
+top: 100px;
+grid-template-rows: 50%;
+}
+       
+.footer{
+
+    margin: 20px;
+}
+
+/**menu ingreso de datos*/
+form input{
+    font-size: 20px;
+    color: black;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin: bottom 10px;
+
+}
+form label{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    
+}
+
+footer{
+    margin: 100px;
+}
+/*marcando las areas*/
+
+.tituloPrincipa{
+    grid-area: titulo;
+}
+
+.nav{
+    grid-area: nav;
+}
+.imagenAuto{
+    grid-area: imagenAuto;
+}
+.datos{
+    grid-area: datos;
+}
+
+@media(min-width:480px){
+    .container{
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "nav"
+    "imagenAuto"
+    "datos"
+    "navbar-toggler";
+    grid-template-rows: 2fr;
+    }
+    .imagenAuto{
+       width: 20px;
+       height: 20px;
+       position: relative;
+       right: 20px;
+       
+    }
+    
+
+   .navbar-toggler{
+    
+    background: rgb(242, 243, 245);
+   }
+
+   .tituloPrincipal{
+    background-color: black;
+    padding: 40px;
+    color: aqua;
+   }
+
+   .datos{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+   }
+
+   
+    }
+
+
+    @media (min-width:720px) {
+    
+            .container{
+            display: grid;
+            grid-template-areas:
+            "titulo"
+            "nav"
+            "imagenAuto"
+            "datos"
+            "navbar-toggler";
+            grid-template-rows: 2fr;
+            }
+            .imagenAuto{
+                position: relative;
+                left: 400px;
+                bottom: 100px;
+            }
+            
+        
+           .navbar-toggler{
+            
+            background: rgb(242, 243, 245);
+           }
+        
+           .tituloPrincipal{
+            background-color: black;
+            padding: 40px;
+            color: rgb(255, 0, 0);
+           }
+        
+           .datos{
+            color: black;
+            font-weight: bolder;
+            font-size: 30px;
+           }
+        
+           
+
+}
